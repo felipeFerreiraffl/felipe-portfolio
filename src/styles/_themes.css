@@ -1,0 +1,27 @@
+@theme {
+  --color-main: rgb(77 96 200);
+  --color-gold: rgb(202 207 59);
+  --color-line: rgb(193 190 208);
+  --color-text: rgb(255 255 255);
+  --color-bg: rgb(21 21 21);
+
+  --font-display: "Bebas Neue", sans-serif;
+  --font-heading: "Rubik", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  --text-heading-display: 4rem;
+  --text-heading-h2: 2.5rem;
+  --text-heading-h3: 2rem;
+
+  --leading-heading: 1.2;
+  --leading-body: 1.4;
+
+  --shadow-normal: -4px 4px 0 rgb(77 96 200);
+  --shadow-anchor: 0 2px 0 rgb(77 96 200);
+
+  --aspect-square: 1;
+  --aspect-about: 11 / 12;
+  --aspect-portrait: 16 / 21;
+  --aspect-landscape: 1 / 2;
+  --aspect-thumbnail: 8 / 5;
+}
