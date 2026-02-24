@@ -3,6 +3,7 @@ import { LINKS } from "@/constants/links";
 import "@styles/globals.css";
 import "@i18n/config";
 import React from "react";
+import Header from "@/components/ui/Header";
 
 export default function RootLayout({
   children,
@@ -20,6 +21,8 @@ export default function RootLayout({
       </head>
 
       <body>
+        <Header />
+
         <main>{children}</main>
       </body>
     </html>
