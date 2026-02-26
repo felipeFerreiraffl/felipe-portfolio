@@ -2,13 +2,15 @@ import type { NextConfig } from "next";
 import type { Configuration, RuleSetRule } from "webpack";
 
 const nextConfig: NextConfig = {
-  reactCompiler: true,
+  reactCompiler: {
+    compilationMode: "annotation",
+  },
 
   turbopack: {
     rules: {
       "*.svg": {
         loaders: ["@svgr/webpack"],
-        as: "*.ts",
+        as: "*.js",
       },
     },
   },
