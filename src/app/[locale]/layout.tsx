@@ -4,17 +4,28 @@ import "@styles/globals.css";
 import "@/lib/i18n/request";
 import React from "react";
 import Header from "@/components/ui/Header";
-import { NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { routing } from "@/lib/i18n/routing";
+import { notFound } from "next/navigation";
+
+type LocaleRoutingProps = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
 
 export default async function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+  params,
+}: LocaleRoutingProps) {
   const fontsClass = `${bebasNeue.className} ${rubik.className} ${plsuJakartaSans.className}`;
   const messages = await getMessages();
   const plainMessages = JSON.parse(JSON.stringify(messages));
+
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
   return (
     <html lang="pt-BR" className={fontsClass}>
@@ -26,7 +37,7 @@ export default async function RootLayout({
 
       <body>
         <NextIntlClientProvider
-          locale="pt-br"
+          locale={locale}
           messages={plainMessages}
           now={new Date()}
           timeZone="America/Sao_Paulo">
