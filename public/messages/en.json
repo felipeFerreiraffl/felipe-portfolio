@@ -1,0 +1,11 @@
+{
+  "Header": {
+    "navLabels": {
+      "aboutMe": "About me",
+      "experiences": "Experiences",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  }
+}

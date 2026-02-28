@@ -1,0 +1,11 @@
+{
+  "Header": {
+    "navLabels": {
+      "aboutMe": "Sobre mim",
+      "experiences": "Experiências",
+      "skills": "Habilidades",
+      "projects": "Projetos",
+      "contact": "Contato"
+    }
+  }
+}

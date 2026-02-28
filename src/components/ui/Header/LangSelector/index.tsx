@@ -21,13 +21,15 @@ export default function LangSelector() {
     }
   };
 
+  const langButton =
+    "relative group md:size-10 cursor-pointer rounded-full opacity-40 transition-opacity ease-in-out duration-300 hover:opacity-100";
   const activeBase =
     "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 bg-main size-11 rounded-full transition-transform ease-in-out duration-300 group-hover:scale-100";
 
   return (
     <div className="flex items-center gap-5">
       <button
-        className="relative group md:size-10 cursor-pointer rounded-full"
+        className={clsx(langButton, locale === "pt-br" && "opacity-100")}
         defaultValue={locale}
         disabled={isPending}
         onClick={() => switchLanguage("pt-br")}>
@@ -41,7 +43,7 @@ export default function LangSelector() {
         />
       </button>
       <button
-        className="relative group md:size-10 cursor-pointer"
+        className={clsx(langButton, locale === "en" && "opacity-100")}
         defaultValue={locale}
         disabled={isPending}
         onClick={() => switchLanguage("en")}>
