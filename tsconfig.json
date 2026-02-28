@@ -37,7 +37,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "svgr.config.js"  ],
+    "**/*.mts",
+    "svgr.config.js"
+  ],
   "exclude": ["node_modules"]
 }

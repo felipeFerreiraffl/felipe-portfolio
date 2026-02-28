@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@remixicon/react": "^4.9.0",
-    "next": "16.1.6",
+    "next": "^16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "svgo": "^4.0.0"
@@ -25,7 +25,6 @@
     "eslint": "^10.0.1",
     "eslint-config-next": "^0.2.4",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "webpack": "^5.105.2"
+    "typescript": "^5"
   }
 }

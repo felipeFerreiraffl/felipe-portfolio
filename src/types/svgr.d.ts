@@ -4,8 +4,3 @@ declare module "*.svg" {
   const svg: FC<SVGProps<SVGElement>>;
   export default svg;
 }
-
-declare module "*.svg?url" {
-  const content: any;
-  export default content;
-}
