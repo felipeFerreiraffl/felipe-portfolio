@@ -9,14 +9,26 @@ const nextConfig: NextConfig = {
   turbopack: {
     rules: {
       "*.svg": {
-        loaders: ["@svgr/webpack"],
+        loaders: [
+          {
+            loader: "@svgr/webpack",
+            options: {
+              babel: false,
+              jsxRuntime: "automatic", // Evita import desnecessário do React
+              dimensions: false,
+              expandProps: "end",
+              ref: true,
+              titleProp: true,
+            },
+          },
+        ],
         as: "*.js",
       },
     },
   },
 
   // svgr config
-  webpack(config: Configuration): Configuration {
+  webpack(config: Configuration, { defaultLoaders }): Configuration {
     const fileRouterRule = config?.module?.rules?.find(
       (rule): rule is RuleSetRule =>
         typeof rule === "object" &&
@@ -35,7 +47,22 @@ const nextConfig: NextConfig = {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
         resourceQuery: { not: [/url/] },
-        use: ["@svgr/webpack"],
+        use: [
+          defaultLoaders.babel, // Loader SWC do Next.js
+          {
+            loader: "@svgr/webpack",
+            options: {
+              babel: false,
+              typescript: true,
+              jsxRuntime: "automatic", // Evita import desnecessário do React
+              dimensions: false,
+              expandProps: "end",
+              ref: true,
+              titleProp: true,
+              ext: "tsx",
+            },
+          },
+        ],
       },
     );
 
