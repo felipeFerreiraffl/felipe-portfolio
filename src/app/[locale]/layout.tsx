@@ -1,13 +1,14 @@
+import Header from "@/components/ui/Header";
 import { bebasNeue, plsuJakartaSans, rubik } from "@/constants/fonts";
 import { LINKS } from "@/constants/links";
-import "@styles/globals.css";
+import { SectionRefsProvider } from "@/context/sectionRefsContext";
 import "@/lib/i18n/request";
-import React from "react";
-import Header from "@/components/ui/Header";
+import { routing } from "@/lib/i18n/routing";
+import "@styles/globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { routing } from "@/lib/i18n/routing";
 import { notFound } from "next/navigation";
+import React from "react";
 
 type LocaleRoutingProps = {
   children: React.ReactNode;
@@ -41,9 +42,11 @@ export default async function RootLayout({
           messages={plainMessages}
           now={new Date()}
           timeZone="America/Sao_Paulo">
-          <Header />
+          <SectionRefsProvider>
+            <Header />
 
-          <main>{children}</main>
+            <main>{children}</main>
+          </SectionRefsProvider>
         </NextIntlClientProvider>
       </body>
     </html>
