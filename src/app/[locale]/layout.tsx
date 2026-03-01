@@ -4,7 +4,7 @@ import { LINKS } from "@/constants/links";
 import { SectionRefsProvider } from "@/context/sectionRefsContext";
 import "@/lib/i18n/request";
 import { routing } from "@/lib/i18n/routing";
-import "@styles/globals.css";
+import "@/styles/globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";

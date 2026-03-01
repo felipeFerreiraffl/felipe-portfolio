@@ -15,9 +15,9 @@ import tools from "@images/skills/skills-tools.webp";
 import brazilFlag from "@/assets/imgs/flag-brazil.webp";
 import englishFlag from "@/assets/imgs/flag-english.webp";
 
-import MongoDB from "@assets/icons/mongodb.svg";
-import MySQL from "@assets/icons/mysql.svg";
-import Typescript from "@assets/icons/typescript.svg";
+import MongoDB from "@/assets/icons/mongodb.svg";
+import MySQL from "@/assets/icons/mysql.svg";
+import Typescript from "@/assets/icons/typescript.svg";
 
 import {
   RiArrowDownLine,
