@@ -3,7 +3,7 @@ import LangSelector from "./LangSelector";
 
 export default function Header() {
   const t = useTranslations("Header");
-  
+
   const NAV_LINKS = [
     { label: t("navLabels.aboutMe"), link: "#" },
     { label: t("navLabels.experiences"), link: "#" },
@@ -13,7 +13,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed w-4/5 flex items-center justify-self-center justify-between px-20 py-4 my-6 border border-main rounded-sm shadow-normal">
+    <header className="fixed w-4/5 flex items-center justify-self-center justify-between px-20 py-4 my-6 bg-bg border border-main rounded-sm shadow-normal z-50">
       <nav className="flex items-center gap-5">
         {NAV_LINKS.map((anchor, idx) => (
           <a
