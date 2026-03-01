@@ -7,5 +7,11 @@
       "projects": "Projects",
       "contact": "Contact"
     }
+  },
+  "Hero": {
+    "volumeTitle": "Professional portfolio",
+    "role": "Junior Software Developer",
+    "curriculumButton": "See curriculum",
+    "profileAlt": "Me - {name}"
   }
 }

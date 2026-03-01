@@ -7,5 +7,11 @@
       "projects": "Projetos",
       "contact": "Contato"
     }
+  },
+  "Hero": {
+    "volumeTitle": "Portfólio profissional",
+    "role": "Desenvolvedor de Software Jr.",
+    "curriculumButton": "Ver currículo",
+    "profileAlt": "Eu - {name}"
   }
 }
