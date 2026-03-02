@@ -1,7 +1,11 @@
+"use client";
+
+import Hero from "@/components/sections/Hero";
+
 export default function LandingPage() {
   return (
-    <div>
-      <h1>Portfólio</h1>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 }

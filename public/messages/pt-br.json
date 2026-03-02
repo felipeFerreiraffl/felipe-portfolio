@@ -5,13 +5,15 @@
       "experiences": "Experiências",
       "skills": "Habilidades",
       "projects": "Projetos",
-      "contact": "Contato"
+      "contact": "Contato",
+      "menu": "Abrir menu"
     }
   },
   "Hero": {
     "volumeTitle": "Portfólio profissional",
     "role": "Desenvolvedor de Software Jr.",
     "curriculumButton": "Ver currículo",
-    "profileAlt": "Eu - {name}"
+    "profileAlt": "Eu - {name}",
+    "scrollDown": "Conteúdo abaixo"
   }
 }
