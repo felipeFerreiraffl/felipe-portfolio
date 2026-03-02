@@ -9,6 +9,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import React from "react";
+import { LazyMotion, domAnimation } from "motion/react";
 
 type LocaleRoutingProps = {
   children: React.ReactNode;
@@ -42,11 +43,13 @@ export default async function RootLayout({
           messages={plainMessages}
           now={new Date()}
           timeZone="America/Sao_Paulo">
-          <SectionRefsProvider>
-            <Header />
+          <LazyMotion features={domAnimation}>
+            <SectionRefsProvider>
+              <Header />
 
-            <main>{children}</main>
-          </SectionRefsProvider>
+              <main>{children}</main>
+            </SectionRefsProvider>
+          </LazyMotion>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -5,9 +5,10 @@
       "experiences": "Experiências",
       "skills": "Habilidades",
       "projects": "Projetos",
-      "contact": "Contato",
-      "menu": "Abrir menu"
-    }
+      "contact": "Contato"
+    },
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
   },
   "Hero": {
     "volumeTitle": "Portfólio profissional",

@@ -7,6 +7,7 @@ import LangSelector from "./LangSelector";
 import { useState } from "react";
 import clsx from "clsx";
 import Menu from "./Menu";
+import { AnimatePresence } from "motion/react";
 
 export default function Header() {
   const refs = useSectionRefs();
@@ -28,7 +29,9 @@ export default function Header() {
     <header className="fixed w-4/5 flex items-center justify-self-center justify-between md:px-15 px-10 py-4 my-6 bg-bg border border-main rounded-sm shadow-normal z-100">
       <button
         className="lg:hidden flex flex-col items-start gap-1 z-120"
-        onClick={handleMenuToggle}>
+        onClick={handleMenuToggle}
+        aria-label={menuIsOpen ? t("closeMenu") : t("openMenu")}
+        aria-controls="mobile-tablet-open">
         <div
           className={clsx(
             "md:w-12 w-9 h-2 rounded-xs bg-line transition-all ease-in-out duration-300 origin-center",
@@ -63,7 +66,9 @@ export default function Header() {
 
       <LangSelector />
 
-      {menuIsOpen && <Menu isOpen={menuIsOpen} setIsOpen={setMenuIsOpen} />}
+      <AnimatePresence>
+        {menuIsOpen && <Menu isOpen={menuIsOpen} setIsOpen={setMenuIsOpen} />}
+      </AnimatePresence>
     </header>
   );
 }
