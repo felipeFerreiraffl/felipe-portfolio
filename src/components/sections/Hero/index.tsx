@@ -36,6 +36,7 @@ export default function Hero() {
         <Image
           src={IMAGES.profile}
           alt={t("profileAlt", { name: "Felipe Ferreira Lima" })}
+          loading="eager"
           className="relative aspect-square w-full shadow-image rounded-lg z-10"
         />
 
@@ -45,12 +46,15 @@ export default function Hero() {
       </div>
 
       <article className="md:absolute lg:bottom-6 md:-bottom-36 md:left-1/2 md:-translate-x-1/2 flex flex-col items-center gap-2">
-        <p className="font-body font-normal leading-body text-text text-lg">
+        <p
+          id="scroll-down"
+          className="font-body font-normal leading-body text-text text-lg">
           {t("scrollDown")}
         </p>
         <a
           href="aboutMe"
-          className="cursor-pointer bg-bg p-1 border border-main shadow-normal rounded-sm transition-colors duration-300 ease-in-out hover:bg-main">
+          className="cursor-pointer bg-bg p-1 border border-main shadow-normal rounded-sm transition-colors duration-300 ease-in-out hover:bg-main"
+          aria-labelledby="scroll-down">
           <Icon icon={ICONS.arrows.normal_down} className="size-10 text-text" />
         </a>
       </article>
