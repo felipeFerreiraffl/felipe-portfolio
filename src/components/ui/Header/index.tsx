@@ -26,7 +26,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed w-4/5 flex items-center justify-self-center justify-between md:px-15 px-10 py-4 my-6 bg-bg border border-main rounded-sm shadow-normal z-100">
+    <header className="fixed w-4/5 flex items-center justify-self-center justify-between md:px-15 px-10 py-4 my-6 bg-bg/90 backdrop-blur-sm border border-main rounded-sm shadow-normal z-100">
       <button
         className="lg:hidden flex flex-col items-start gap-1 z-120"
         onClick={handleMenuToggle}

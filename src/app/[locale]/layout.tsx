@@ -10,6 +10,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import React from "react";
 import { LazyMotion, domAnimation } from "motion/react";
+import Footer from "@/components/ui/Footer";
 
 type LocaleRoutingProps = {
   children: React.ReactNode;
@@ -48,6 +49,8 @@ export default async function RootLayout({
               <Header />
 
               <main>{children}</main>
+
+              <Footer />
             </SectionRefsProvider>
           </LazyMotion>
         </NextIntlClientProvider>
