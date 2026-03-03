@@ -1,0 +1,20 @@
+{
+  "Header": {
+    "navLabels": {
+      "aboutMe": "About me",
+      "experiences": "Experiences",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "Hero": {
+    "volumeTitle": "Professional portfolio",
+    "role": "Junior Software Developer",
+    "curriculumButton": "See curriculum",
+    "profileAlt": "Me - {name}",
+    "scrollDown": "Content below"
+  }
+}
