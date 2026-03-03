@@ -16,5 +16,11 @@
     "curriculumButton": "Ver currículo",
     "profileAlt": "Eu - {name}",
     "scrollDown": "Conteúdo abaixo"
+  },
+  "AboutMe": {
+    "title": "Sobre mim"
+  },
+  "Common": {
+    "sectionChapter": "Capítulo {number}"
   }
 }

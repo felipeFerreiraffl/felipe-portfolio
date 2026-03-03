@@ -16,5 +16,11 @@
     "curriculumButton": "See curriculum",
     "profileAlt": "Me - {name}",
     "scrollDown": "Content below"
+  },
+  "AboutMe": {
+    "title": "About me"
+  },
+  "Common": {
+    "sectionChapter": "Chapter {number}"
   }
 }
