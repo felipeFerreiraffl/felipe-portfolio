@@ -1,11 +1,10 @@
-import { RemixiconComponentType, Ri24HoursFill } from "@remixicon/react";
+import { IconSVGElement } from "@/types/elements.types";
 import { useTranslations } from "next-intl";
-import { FC, SVGProps } from "react";
 import Icon from "../Icon";
 
 type SectionTitleProps = {
   title: string;
-  icon: RemixiconComponentType | FC<SVGProps<SVGElement>>;
+  icon: IconSVGElement;
   chapterNumber: number;
 };
 

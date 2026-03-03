@@ -1,8 +1,7 @@
-import { RemixiconComponentType } from "@remixicon/react";
-import { FC, SVGProps } from "react";
+import { IconSVGElement } from "@/types/elements.types";
 
 type IconProps = {
-  icon: RemixiconComponentType | FC<SVGProps<SVGElement>>;
+  icon: IconSVGElement;
   className?: string;
   label?: string;
 };
