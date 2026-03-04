@@ -7,6 +7,7 @@ import "@/lib/i18n/request";
 import { routing } from "@/lib/i18n/routing";
 import "@/styles/globals.css";
 import { domAnimation, LazyMotion } from "motion/react";
+import { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -15,6 +16,19 @@ import React from "react";
 type LocaleRoutingProps = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
+};
+
+export const metadata: Metadata = {
+  title: "Portfólio | Felipe Ferreira",
+  description:
+    "Portfólio profissional feito para demonstrar minhas habilidades, experiências e projetos",
+  authors: { name: "Felipe Ferreira Lima", url: LINKS.github },
+  openGraph: {
+    title: "Perfil do LinkedIn",
+    type: "profile",
+    username: "Felipe Ferreira",
+    url: LINKS.linkedin,
+  },
 };
 
 export default async function RootLayout({
@@ -32,12 +46,6 @@ export default async function RootLayout({
 
   return (
     <html lang="pt-BR" className={fontsClass}>
-      <head>
-        <meta name="author" content={LINKS.github} />
-        <link rel="icon" href="/assets/svgs/favicon.svg" sizes="any" />
-        <title>Portfólio | Felipe Ferreira</title>
-      </head>
-
       <body>
         <NextIntlClientProvider
           locale={locale}
