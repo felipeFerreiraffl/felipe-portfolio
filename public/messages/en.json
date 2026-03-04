@@ -18,7 +18,21 @@
     "scrollDown": "Content below"
   },
   "AboutMe": {
-    "title": "About me"
+    "title": "About me",
+    "introCards": {
+      "presentation": {
+        "title": "Presentation",
+        "description": "Developer with full-stack tools and modern projects experience"
+      },
+      "goals": {
+        "title": "Objetivos",
+        "description": "Become a senior programmer and, if possible, working full-stack or with game development"
+      },
+      "hobbies": {
+        "title": "Hobbies",
+        "description": "I like playing videogames, watch animes, read mangas, watch football and drawing"
+      }
+    }
   },
   "Common": {
     "sectionChapter": "Chapter {number}"

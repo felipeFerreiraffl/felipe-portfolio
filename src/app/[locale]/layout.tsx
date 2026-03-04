@@ -1,3 +1,4 @@
+import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 import { bebasNeue, plsuJakartaSans, rubik } from "@/constants/fonts";
 import { LINKS } from "@/constants/links";
@@ -5,12 +6,11 @@ import { SectionRefsProvider } from "@/context/sectionRefsContext";
 import "@/lib/i18n/request";
 import { routing } from "@/lib/i18n/routing";
 import "@/styles/globals.css";
+import { domAnimation, LazyMotion } from "motion/react";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import React from "react";
-import { LazyMotion, domAnimation } from "motion/react";
-import Footer from "@/components/ui/Footer";
 
 type LocaleRoutingProps = {
   children: React.ReactNode;
