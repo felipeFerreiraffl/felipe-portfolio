@@ -1,10 +1,15 @@
+"use client";
+
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import { ICONS, IMAGES } from "@/constants/assets";
+import { useSectionRefs } from "@/context/sectionRefsContext";
+import { scrollToSection } from "@/utils/scrollToSection";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Hero() {
+  const { aboutMe } = useSectionRefs();
   const t = useTranslations("Hero");
 
   return (
@@ -52,7 +57,8 @@ export default function Hero() {
           {t("scrollDown")}
         </p>
         <a
-          href="aboutMe"
+          href="#"
+          onClick={() => scrollToSection(aboutMe)}
           className="cursor-pointer bg-bg p-1 border border-main shadow-normal rounded-sm transition-colors duration-300 ease-in-out hover:bg-main"
           aria-labelledby="scroll-down">
           <Icon icon={ICONS.arrows.normal_down} className="size-10 text-text" />
