@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   description:
     "Portfólio profissional feito para demonstrar minhas habilidades, experiências e projetos",
   authors: { name: "Felipe Ferreira Lima", url: LINKS.github },
+  icons: {
+    icon: "/assets/svgs/favicon.svg",
+  },
   openGraph: {
     title: "Perfil do LinkedIn",
     type: "profile",
