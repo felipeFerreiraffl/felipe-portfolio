@@ -2,3 +2,4 @@
 
 @import "./_themes.css" layer(theme);
 @import "./_base.css" layer(base);
+@import "./_utilities.css" layer(utilities);
