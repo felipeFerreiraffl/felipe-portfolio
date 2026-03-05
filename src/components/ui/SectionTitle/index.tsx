@@ -16,7 +16,7 @@ export default function SectionTitle({
   const t = useTranslations("Common");
 
   return (
-    <div className="flex flex-1 mx-auto md:items-start items-center md:flex-row flex-col md:gap-0 gap-3 w-full">
+    <div className="w-full flex mx-auto md:items-start items-center md:flex-row flex-col md:gap-0 gap-3">
       <Icon
         icon={icon}
         label={title}
