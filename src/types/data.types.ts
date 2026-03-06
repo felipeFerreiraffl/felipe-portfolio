@@ -1,11 +1,13 @@
 import { StaticImageData } from "next/image";
 
+export type TranslatableDate = { monthKey: string; year: number };
+
 export type ExperienceDataType = {
   id: number | null;
   title: string;
   description: string;
-  startDate: string;
-  endDate?: string | null;
+  startDate: string | TranslatableDate;
+  endDate?: string | TranslatableDate | null;
   illustration: StaticImageData | string;
   usedSkills: string[];
 };
