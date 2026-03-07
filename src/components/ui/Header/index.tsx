@@ -17,7 +17,7 @@ export default function Header() {
 
   const handleMenuToggle = () => setMenuIsOpen((prev) => !prev);
 
-  const NAV_LINKS = [
+  const navLinks = [
     { label: t("navLabels.aboutMe"), link: refs.aboutMe },
     { label: t("navLabels.experiences"), link: refs.experiences },
     { label: t("navLabels.skills"), link: refs.skills },
@@ -51,14 +51,13 @@ export default function Header() {
 
       <nav>
         <ul className="lg:flex hidden lg:items-center lg:gap-5">
-          {NAV_LINKS.map((anchor, idx) => (
+          {navLinks.map((anchor, idx) => (
             <li key={idx}>
-              <a
-                href="#"
+              <button
                 onClick={() => scrollToSection(anchor.link)}
-                className="text-base font-bold font-body uppercase leading-body text-text px-3 py-2 rounded-sm transition-shadow ease-in-out duration-300 hover:shadow-anchor">
+                className="cursor-pointer text-base font-bold font-body uppercase leading-body text-text px-3 py-2 rounded-sm transition-shadow ease-in-out duration-300 hover:shadow-anchor">
                 {anchor.label}
-              </a>
+              </button>
             </li>
           ))}
         </ul>

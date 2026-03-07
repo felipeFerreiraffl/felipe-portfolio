@@ -34,7 +34,51 @@
       }
     }
   },
+  "Experiences": {
+    "title": "Experiências",
+    "cardTitles": {
+      "description": "Descrição",
+      "skillsEarned": "Habilidades adquiridas",
+      "skillsUsed": "Habilidades utilizadas"
+    },
+    "cards": {
+      "swissSenai": {
+        "title": "SENAI Suiço-Brasileiro",
+        "description": "Curso técnico de Desenvolvimento de Sistemas, com aprendizagem sobre o universo de tecnologia de desenvolvimento, como front-end, backend, redes, etc.",
+        "optionalTechs": {
+          "network": "Redes",
+          "agileMethods": "Metodologias ágeis"
+        }
+      },
+      "mercedes": {
+        "title": "SENAI Mercedes-Benz",
+        "description": "Curso de aprendizagem industrial com atividades de produção de peças e montagem de conjuntos de veículos pesados.",
+        "optionalTechs": {
+          "teamwork": "Trabalho em equipe",
+          "proactivity": "Proatividade",
+          "details": "Atenção aos detalhes"
+        }
+      },
+      "mShimizu": {
+        "title": "M. Shimizu - Desenvolvedor de Soft. Jr.",
+        "description": "Desenvolvimento de sofwares internos e externos da empresa M. Shimizu"
+      }
+    },
+    "currentWork": "atual",
+    "dateMonths": {
+      "february": "fev. {year}",
+      "april": "abr. {year}",
+      "may": "maio {year}",
+      "august": "ago. {year}",
+      "octuber": "out. {year}",
+      "december": "dez. {year}"
+    }
+  },
   "Common": {
-    "sectionChapter": "Capítulo {number}"
+    "sectionChapter": "Capítulo {number}",
+    "carouselButton": {
+      "prev": "Anterior",
+      "next": "Próximo"
+    }
   }
 }

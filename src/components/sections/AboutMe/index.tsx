@@ -13,7 +13,7 @@ export default function AboutMe() {
 
   return (
     <section
-      className="lg:w-[94dvw] w-[90vw] mx-auto flex flex-col items-center gap-10"
+      className="w-full flex flex-col items-center gap-10"
       ref={aboutMe}>
       <SectionTitle
         title={t("title")}
