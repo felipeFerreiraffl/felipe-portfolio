@@ -56,7 +56,7 @@ export default function ExperienceCard({
             <h4 className="font-heading font-medium leading-heading md:text-2xl text-xl text-white">
               {t("cardTitles.description")}
             </h4>
-            <p className="font-body font-normal leading-body md:text-base text-sm text-white">
+            <p className="font-body font-normal leading-body md:text-base text-sm text-white md:text-left text-center">
               {description}
             </p>
           </div>
