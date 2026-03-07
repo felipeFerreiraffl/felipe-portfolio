@@ -34,7 +34,46 @@
       }
     }
   },
+  "Experiences": {
+    "title": "Experiences",
+    "cards": {
+      "swissSenai": {
+        "title": "SENAI Suiço-Brasileiro",
+        "description": "Technical course in Systems Development, covering the technology development universe, including front-end, back-end, networking, etc.",
+        "optionalTechs": {
+          "network": "Networking",
+          "agileMethods": "Agile methodologies"
+        }
+      },
+      "mercedes": {
+        "title": "SENAI Mercedes-Benz",
+        "description": "Industrial apprenticeship course with activities involving parts production and assembly of heavy vehicle components.",
+        "optionalTechs": {
+          "teamwork": "Teamwork",
+          "proactivity": "Proactivity",
+          "details": "Attention to detail"
+        }
+      },
+      "mShimizu": {
+        "title": "M. Shimizu - Jr. Software Developer",
+        "description": "Development of internal and external software for the company M. Shimizu."
+      }
+    },
+    "currentWork": "current",
+    "dateMonths": {
+      "february": "feb. {year}",
+      "april": "apr. {year}",
+      "may": "may {year}",
+      "august": "aug. {year}",
+      "octuber": "oct. {year}",
+      "december": "dec. {year}"
+    }
+  },
   "Common": {
-    "sectionChapter": "Chapter {number}"
+    "sectionChapter": "Chapter {number}",
+    "carouselButton": {
+      "prev": "Previous",
+      "next": "Next"
+    }
   }
 }

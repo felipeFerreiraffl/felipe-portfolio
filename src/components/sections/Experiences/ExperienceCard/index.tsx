@@ -1,14 +1,19 @@
+"use client";
+
+import { ExperienceDataType } from "@/types/data.types";
 import { imageUrl } from "@/utils/imageUrl";
+import { useTranslations } from "next-intl";
 import { StaticImageData } from "next/image";
-import { CSSProperties } from "react";
+import { CSSProperties, useEffect, useState } from "react";
 
 type ExperienceCardProps = {
   index: number;
   title: string;
   startDate: string;
-  endDate: string;
+  endDate?: string | null;
   description: string;
   illustration: StaticImageData | string;
+  usedSkills: string[];
 };
 
 export default function ExperienceCard({
@@ -18,22 +23,29 @@ export default function ExperienceCard({
   startDate,
   endDate,
   illustration,
+  usedSkills,
 }: ExperienceCardProps) {
+  const t = useTranslations("Experiences");
   const paddingNum = index.toString().padStart(2, "0");
 
+  const resolveUsedSkill = (skill: string): string => {
+    if (skill.startsWith("t:")) return t(skill.slice(2));
+    return skill;
+  };
+
   return (
-    <div className="relative lg:max-w-[80dvw] lg:w-310 w-full md:h-155 h-145 flex items-start justify-between border-[1.5px] border-line rounded-sm bg-bg overflow-hidden">
-      <span className="absolute -top-2 -left-2 md:size-16 size-12 flex items-center justify-center bg-bg border-[1.5px] border-line rounded-sm font-heading font-bold leading-heading text-white text-heading-h3 text-center">
+    <div className="relative max-w-[80dvw] w-full md:min-h-155 min-h-145 h-full flex items-start justify-between border-[1.5px] border-line rounded-sm bg-bg">
+      <span className="absolute -top-2 -left-2 md:size-16 size-12 flex items-center justify-center bg-bg border-[1.5px] border-line rounded-sm font-heading font-bold leading-heading text-white md:text-heading-h3 text-2xl text-center">
         {paddingNum}
       </span>
 
-      <div className="lg:max-w-1/2 md:max-w-[80%] max-w-full flex flex-col md:items-start items-center justify-between gap-10 md:px-10 md:py-20 px-5 py-10">
+      <div className="md:max-w-[80%] max-w-full flex flex-col md:items-start items-center justify-between gap-10 md:px-10 md:py-20 px-5 py-10">
         <div className="flex flex-col md:items-start items-center gap-3">
           <h3 className="font-heading font-bold leading-heading md:text-heading-h2 text-heading-h3 md:text-left text-center text-white">
             {title}
           </h3>
           <span className="font-body font-normal leading-body text-sm text-white">
-            {startDate} — {endDate}
+            {startDate} — {endDate ? endDate : t("currentWork")}
           </span>
         </div>
 
@@ -52,17 +64,19 @@ export default function ExperienceCard({
               Habilidades
             </h4>
             <div className="flex flex-wrap md:items-start items-center gap-5">
-              <p className="bg-bg font-body font-normal md:text-base text-sm text-white border border-main rounded-sm shadow-normal px-3 py-2">
-                Teste
-              </p>
+              {usedSkills.map((skill, idx) => (
+                <p
+                  key={idx}
+                  className="bg-bg font-body font-normal md:text-base text-sm text-white border border-main rounded-sm shadow-normal px-3 py-2">
+                  {resolveUsedSkill(skill)}
+                </p>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        className="relative aspect-portrait h-full opacity-40 clip-path-illustration lg:block hidden"
-        style={{}}>
+      <div className="relative aspect-portrait h-full opacity-40 clip-path-illustration lg:block hidden">
         <div className="absolute top-0 right-0 size-full bg-main/40"></div>
         <div
           className="size-full bg-(image:--bg-img) bg-center bg-cover bg-no-repeat opacity-60"
