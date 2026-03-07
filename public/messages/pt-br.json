@@ -36,6 +36,11 @@
   },
   "Experiences": {
     "title": "Habilidades",
+    "cardTitles": {
+      "description": "Descrição",
+      "skillsEarned": "Habilidades adquiridas",
+      "skillsUsed": "Habilidades utilizadas"
+    },
     "cards": {
       "swissSenai": {
         "title": "SENAI Suiço-Brasileiro",

@@ -4,6 +4,7 @@ import { IMAGES } from "./assets";
 export const experiencesData: ExperienceDataType[] = [
   {
     id: 1,
+    type: "school",
     title: "cards.swissSenai.title",
     description: "cards.swissSenai.description",
     startDate: "jul. 2023",
@@ -23,6 +24,7 @@ export const experiencesData: ExperienceDataType[] = [
   },
   {
     id: 2,
+    type: "school",
     title: "cards.mercedes.title",
     description: "cards.mercedes.description",
     startDate: "jul. 2023",
@@ -36,6 +38,7 @@ export const experiencesData: ExperienceDataType[] = [
   },
   {
     id: 3,
+    type: "work",
     title: "cards.mShimizu.title",
     description: "cards.mShimizu.description",
     startDate: { monthKey: "dateMonths.february", year: 2026 },

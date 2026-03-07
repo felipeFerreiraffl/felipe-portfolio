@@ -7,6 +7,7 @@ import { StaticImageData } from "next/image";
 import { CSSProperties, useEffect, useState } from "react";
 
 type ExperienceCardProps = {
+  type: "work" | "school";
   index: number;
   title: string;
   startDate: string;
@@ -17,6 +18,7 @@ type ExperienceCardProps = {
 };
 
 export default function ExperienceCard({
+  type,
   index,
   title,
   description,
@@ -52,7 +54,7 @@ export default function ExperienceCard({
         <div className="flex flex-col md:items-start items-center gap-8">
           <div className="flex flex-col md:items-start items-center gap-2">
             <h4 className="font-heading font-medium leading-heading md:text-2xl text-xl text-white">
-              Descrição
+              {t("cardTitles.description")}
             </h4>
             <p className="font-body font-normal leading-body md:text-base text-sm text-white">
               {description}
@@ -61,7 +63,9 @@ export default function ExperienceCard({
 
           <div className="flex flex-col md:items-start items-center gap-2">
             <h4 className="font-heading font-medium leading-heading md:text-2xl text-xl text-white">
-              Habilidades
+              {type === "school"
+                ? t("cardTitles.skillsEarned")
+                : t("cardTitles.skillsUsed")}
             </h4>
             <div className="flex flex-wrap md:items-start items-center gap-5">
               {usedSkills.map((skill, idx) => (

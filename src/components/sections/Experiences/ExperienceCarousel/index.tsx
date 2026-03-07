@@ -69,6 +69,7 @@ export default function ExperienceCarousel() {
           {experiencesData.map((exp, idx) => (
             <div key={idx} className="min-w-0 flex-none basis-full p-3">
               <ExperienceCard
+                type={exp.type}
                 index={exp.id ?? idx + 1}
                 title={tExp(exp.title)}
                 description={tExp(exp.description)}

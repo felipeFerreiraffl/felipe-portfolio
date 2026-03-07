@@ -4,6 +4,7 @@ export type TranslatableDate = { monthKey: string; year: number };
 
 export type ExperienceDataType = {
   id: number | null;
+  type: "school" | "work";
   title: string;
   description: string;
   startDate: string | TranslatableDate;

@@ -36,6 +36,11 @@
   },
   "Experiences": {
     "title": "Experiences",
+    "cardTitles": {
+      "description": "Description",
+      "skillsEarned": "Earned skills",
+      "skillsUsed": "Used skills"
+    },
     "cards": {
       "swissSenai": {
         "title": "SENAI Suiço-Brasileiro",
