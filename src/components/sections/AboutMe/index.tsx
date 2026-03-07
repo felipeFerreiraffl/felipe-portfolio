@@ -1,11 +1,8 @@
-"use client";
-
 import SectionTitle from "@/components/ui/SectionTitle";
 import { ICONS, IMAGES } from "@/constants/assets";
 import { useSectionRefs } from "@/context/sectionRefsContext";
 import { useTranslations } from "next-intl";
 import IntroCard from "./IntroCard";
-import { Ri4kLine } from "@remixicon/react";
 
 export default function AboutMe() {
   const { aboutMe } = useSectionRefs();
