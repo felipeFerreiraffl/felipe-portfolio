@@ -56,13 +56,12 @@ export default function Hero() {
           className="font-body font-normal leading-body text-text text-lg">
           {t("scrollDown")}
         </p>
-        <a
-          href="#"
+        <button
           onClick={() => scrollToSection(aboutMe)}
           className="cursor-pointer bg-bg p-1 border border-main shadow-normal rounded-sm transition-colors duration-300 ease-in-out hover:bg-main"
           aria-labelledby="scroll-down">
           <Icon icon={ICONS.arrows.normal_down} className="size-10 text-text" />
-        </a>
+        </button>
       </article>
     </section>
   );
