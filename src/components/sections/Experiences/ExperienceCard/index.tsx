@@ -67,7 +67,7 @@ export default function ExperienceCard({
                 ? t("cardTitles.skillsEarned")
                 : t("cardTitles.skillsUsed")}
             </h4>
-            <div className="flex flex-wrap md:items-start items-center gap-5">
+            <div className="flex flex-wrap md:items-start items-center md:justify-start justify-center gap-5">
               {usedSkills.map((skill, idx) => (
                 <p
                   key={idx}
