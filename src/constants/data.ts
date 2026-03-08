@@ -90,6 +90,13 @@ export const skillsData: SkillsDataType[] = [
         hasStar: true,
         icon: ICONS.skills.reactjs,
       },
+      {
+        id: 5,
+        title: "Typescript",
+        level: "techLevels.basic",
+        hasStar: false,
+        icon: ICONS.skills.typescript,
+      },
     ],
   },
   {
@@ -98,28 +105,28 @@ export const skillsData: SkillsDataType[] = [
     illustration: IMAGES.skills.backend,
     techs: [
       {
-        id: 5,
+        id: 6,
         title: "Node.js",
         level: "techLevels.intermediate",
         hasStar: false,
         icon: ICONS.skills.nodejs,
       },
       {
-        id: 6,
+        id: 7,
         title: "Java",
         level: "techLevels.basic",
         hasStar: false,
         icon: ICONS.skills.java,
       },
       {
-        id: 7,
+        id: 8,
         title: "MySQL",
         level: "techLevels.basic",
         hasStar: false,
         icon: ICONS.skills.mysql,
       },
       {
-        id: 8,
+        id: 9,
         title: "MongoDB",
         level: "techLevels.basic",
         hasStar: false,
@@ -129,25 +136,25 @@ export const skillsData: SkillsDataType[] = [
   },
   {
     id: 3,
-    title: "techTitle.tools",
+    title: "t:techTitle.tools",
     illustration: IMAGES.skills.tools,
     techs: [
       {
-        id: 9,
+        id: 10,
         title: "Figma",
         level: "techLevels.advanced",
         hasStar: true,
         icon: ICONS.skills.figma,
       },
       {
-        id: 10,
+        id: 11,
         title: "Git",
         level: "techLevels.intermediate",
         hasStar: false,
         icon: ICONS.skills.git,
       },
       {
-        id: 11,
+        id: 12,
         title: "Vercel",
         level: "techLevels.basic",
         hasStar: false,
