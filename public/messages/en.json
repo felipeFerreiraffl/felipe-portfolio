@@ -74,6 +74,18 @@
       "december": "dec. {year}"
     }
   },
+  "Skills": {
+    "title": "Skills",
+    "techLevels": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "techTitle": {
+      "tools": "Tools"
+    },
+    "hasStar": "Favorite"
+  },
   "Common": {
     "sectionChapter": "Chapter {number}",
     "carouselButton": {

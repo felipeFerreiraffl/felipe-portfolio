@@ -74,6 +74,18 @@
       "december": "dez. {year}"
     }
   },
+  "Skills": {
+    "title": "Habilidades",
+    "techLevels": {
+      "basic": "Básico",
+      "intermediate": "Intermediário",
+      "advanced": "Avançado"
+    },
+    "techTitle": {
+      "tools": "Ferramentas"
+    },
+    "hasStar": "Favorito"
+  },
   "Common": {
     "sectionChapter": "Capítulo {number}",
     "carouselButton": {

@@ -1,5 +1,3 @@
-"use client";
-
 import SectionTitle from "@/components/ui/SectionTitle";
 import { ICONS } from "@/constants/assets";
 import { useSectionRefs } from "@/context/sectionRefsContext";

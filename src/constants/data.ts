@@ -1,5 +1,5 @@
-import { ExperienceDataType } from "@/types/data.types";
-import { IMAGES } from "./assets";
+import { ExperienceDataType, SkillsDataType } from "@/types/data.types";
+import { ICONS, IMAGES } from "./assets";
 
 export const experiencesData: ExperienceDataType[] = [
   {
@@ -52,6 +52,114 @@ export const experiencesData: ExperienceDataType[] = [
       "React.js",
       "Next.js",
       "Tailwind CSS",
+    ],
+  },
+];
+
+export const skillsData: SkillsDataType[] = [
+  {
+    id: 1,
+    title: "Front-end",
+    illustration: IMAGES.skills.frontend,
+    techs: [
+      {
+        id: 1,
+        title: "HTML",
+        level: "techLevels.advanced",
+        hasStar: true,
+        icon: ICONS.skills.html,
+      },
+      {
+        id: 2,
+        title: "CSS",
+        level: "techLevels.advanced",
+        hasStar: true,
+        icon: ICONS.skills.css,
+      },
+      {
+        id: 3,
+        title: "Javascript",
+        level: "techLevels.intermediate",
+        hasStar: true,
+        icon: ICONS.skills.javascript,
+      },
+      {
+        id: 4,
+        title: "React.js",
+        level: "techLevels.intermediate",
+        hasStar: true,
+        icon: ICONS.skills.reactjs,
+      },
+      {
+        id: 5,
+        title: "Typescript",
+        level: "techLevels.basic",
+        hasStar: false,
+        icon: ICONS.skills.typescript,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Back-end",
+    illustration: IMAGES.skills.backend,
+    techs: [
+      {
+        id: 6,
+        title: "Node.js",
+        level: "techLevels.intermediate",
+        hasStar: false,
+        icon: ICONS.skills.nodejs,
+      },
+      {
+        id: 7,
+        title: "Java",
+        level: "techLevels.basic",
+        hasStar: false,
+        icon: ICONS.skills.java,
+      },
+      {
+        id: 8,
+        title: "MySQL",
+        level: "techLevels.basic",
+        hasStar: false,
+        icon: ICONS.skills.mysql,
+      },
+      {
+        id: 9,
+        title: "MongoDB",
+        level: "techLevels.basic",
+        hasStar: false,
+        icon: ICONS.skills.mongo_db,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "t:techTitle.tools",
+    illustration: IMAGES.skills.tools,
+    techs: [
+      {
+        id: 10,
+        title: "Figma",
+        level: "techLevels.advanced",
+        hasStar: true,
+        icon: ICONS.skills.figma,
+      },
+      {
+        id: 11,
+        title: "Git",
+        level: "techLevels.intermediate",
+        hasStar: false,
+        icon: ICONS.skills.git,
+      },
+      {
+        id: 12,
+        title: "Vercel",
+        level: "techLevels.basic",
+        hasStar: false,
+        icon: ICONS.skills.vercel,
+      },
     ],
   },
 ];

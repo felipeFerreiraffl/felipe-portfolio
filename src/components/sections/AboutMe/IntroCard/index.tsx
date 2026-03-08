@@ -1,6 +1,5 @@
 import Icon from "@/components/ui/Icon";
 import { IconSVGElement } from "@/types/elements.types";
-import { RiAB } from "@remixicon/react";
 import { StaticImageData } from "next/image";
 import { CSSProperties } from "react";
 
