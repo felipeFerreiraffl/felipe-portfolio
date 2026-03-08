@@ -70,7 +70,7 @@ export default function ExperienceCard({
             <div className="flex flex-wrap md:items-start items-center md:justify-start justify-center gap-5">
               {usedSkills.map((skill, idx) => (
                 <p
-                  key={idx}
+                  key={`experience-${idx}`}
                   className="bg-bg font-body font-normal md:text-base text-sm text-white border border-main rounded-sm shadow-normal px-3 py-2">
                   {resolveUsedSkill(skill)}
                 </p>

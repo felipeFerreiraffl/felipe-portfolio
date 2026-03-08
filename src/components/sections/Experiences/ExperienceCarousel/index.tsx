@@ -67,7 +67,9 @@ export default function ExperienceCarousel() {
       <div className="overflow-hidden w-full" ref={emblaRef}>
         <div className="flex">
           {experiencesData.map((exp, idx) => (
-            <div key={idx} className="min-w-0 flex-none basis-full p-3">
+            <div
+              key={`experience-${idx}`}
+              className="min-w-0 flex-none basis-full p-3">
               <ExperienceCard
                 type={exp.type}
                 index={exp.id ?? idx + 1}

@@ -65,9 +65,10 @@ export default function SkillsCarousel() {
       <div className="overflow-hidden w-full" ref={emblaRef}>
         <div className="flex">
           {skillsData.map((skill) => (
-            <div className="min-w-0 flex-none basis-full flex justify-center p-3">
+            <div
+              key={`skill-${skill.id}`}
+              className="min-w-0 flex-none basis-full flex justify-center p-3">
               <SkillCard
-                key={`skill-${skill.id}`}
                 title={skill.title}
                 illustration={skill.illustration}
                 techs={skill.techs}
