@@ -4,7 +4,7 @@ import { IconSVGElement } from "@/types/elements.types";
 type ContactLinkProps = {
   label: string;
   icon: IconSVGElement;
-  href: string;
+  href: string | undefined;
   title?: string;
 };
 

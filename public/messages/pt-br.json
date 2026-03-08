@@ -86,6 +86,14 @@
     },
     "hasStar": "Favorito"
   },
+  "Contact": {
+    "title": "Contato",
+    "linksTitle": {
+      "github": "Navegar para GitHub",
+      "linkedin": "Navegar para LinkedIn",
+      "mail": "Copiar/enviar e-mail"
+    }
+  },
   "Common": {
     "sectionChapter": "Capítulo {number}",
     "carouselButton": {
