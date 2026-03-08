@@ -76,11 +76,11 @@ export const IMAGES = {
       thumbCalc,
       thumbKitsu,
     },
-    skills: {
-      backend,
-      frontend,
-      tools,
-    },
+  },
+  skills: {
+    backend,
+    frontend,
+    tools,
   },
 };
 
