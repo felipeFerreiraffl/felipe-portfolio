@@ -86,6 +86,9 @@
     },
     "hasStar": "Favorite"
   },
+  "Projects": {
+    "title": "Projects"
+  },
   "Contact": {
     "title": "Contact",
     "linksTitle": {
