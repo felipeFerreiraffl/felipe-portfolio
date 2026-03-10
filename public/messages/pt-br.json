@@ -87,7 +87,18 @@
     "hasStar": "Favorito"
   },
   "Projects": {
-    "title": "Projetos"
+    "title": "Projetos",
+    "data": {
+      "mathCalc": {
+        "title": "Cálculos matemáticos",
+        "description": "Cálculos Matemáticos é uma aplicação web desenvolvida em React com roteamento via React Router, que centraliza em um único lugar diferentes tipos de calculadoras para resolver problemas do cotidiano e acadêmicos. O projeto conta com módulos independentes para cálculo de IMC, juros simples e compostos, operações matemáticas e fórmulas de física, organizados em páginas dedicadas e navegáveis. A arquitetura foi estruturada com separação clara de responsabilidades — componentes reutilizáveis, scripts de lógica isolados e páginas independentes —, o que demonstra boas práticas de organização de código em projetos front-end. Toda a aplicação é servida como SPA e hospedada na Vercel, garantindo deploy contínuo e acesso rápido. O projeto resolve o problema de ter que recorrer a múltiplas ferramentas diferentes para cálculos distintos, reunindo tudo em uma interface limpa, intuitiva e de fácil navegação."
+      },
+      "animeManga": {
+        "title": "Animes & Mangás",
+        "description": "Animes & Mangás é uma aplicação web desenvolvida em React que consome a Kitsu API para entregar ao usuário uma experiência completa de descoberta de animes e mangás, resolvendo o problema de fragmentação de informações em múltiplas fontes. A aplicação conta com páginas dedicadas para explorar os títulos mais populares e melhor avaliados de todos os tempos, os lançamentos e destaques da temporada atual, além de navegação por 8 gêneros distintos (Ação, Comédia, Drama, Esportes, Horror, Mistério, Romance e Sci-fi) — tudo exibido em carrosséis interativos e cards responsivos. Cada título possui uma página de detalhes com informações como título canônico, título em inglês, status, data de criação e número de episódios ou capítulos. A arquitetura do projeto segue boas práticas com separação entre camada de serviços (integração com a API), componentes reutilizáveis e páginas independentes, além de recursos de UX como tela de carregamento, botão de voltar ao topo e navegação fluida via React Router."
+      }
+    },
+    "viewProject": "Ver projeto"
   },
   "Contact": {
     "title": "Contato",
@@ -102,6 +113,7 @@
     "carouselButton": {
       "prev": "Anterior",
       "next": "Próximo"
-    }
+    },
+    "close": "Fechar"
   }
 }

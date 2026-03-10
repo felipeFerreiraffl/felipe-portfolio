@@ -87,7 +87,18 @@
     "hasStar": "Favorite"
   },
   "Projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "data": {
+      "mathCalc": {
+        "title": "Cálculos matemáticos",
+        "description": "Cálculos Matemáticos is a React-based web application with client-side routing that brings together multiple types of calculators in a single, unified interface — solving the everyday problem of needing to switch between different tools for different calculations. The app features dedicated modules for BMI calculation, simple and compound interest, mathematical operations, and physics formulas, each organized as independent, navigable pages. The codebase follows a clear separation of concerns, with reusable components, isolated logic scripts, and self-contained pages, reflecting solid front-end architecture practices. Deployed as a SPA on Vercel with continuous delivery, the project demonstrates proficiency in React, component-driven development, and application structuring."
+      },
+      "animeManga": {
+        "title": "Animes & Mangás",
+        "description": "Animes & Mangás is a React web application that integrates with the Kitsu API to provide a unified platform for discovering anime and manga titles, solving the problem of scattered information across multiple sources. The app features dedicated sections for all-time most popular and highest-rated titles, currently airing seasonal content (sorted by rating and recency), and genre-based browsing across 8 categories — all presented through interactive carousels and responsive cards. Each title links to a detailed page displaying canonical title, English title, status, creation date, episode or chapter count, and more. The project follows a clean architectural pattern with a dedicated service layer for API communication, reusable UI components (Slider, ContentCard, GenderCard, LoadingScreen, ScrollToTop), and independent page modules, demonstrating solid command of React, external API consumption, component-driven development, and thoughtful UX design."
+      }
+    },
+    "viewProject": "View project"
   },
   "Contact": {
     "title": "Contact",
@@ -102,6 +113,7 @@
     "carouselButton": {
       "prev": "Previous",
       "next": "Next"
-    }
+    },
+    "close": "Close"
   }
 }
