@@ -1,5 +1,11 @@
-import { ExperienceDataType, SkillsDataType } from "@/types/data.types";
+import {
+  ExperienceDataType,
+  ProjectsDataType,
+  SkillsDataType,
+} from "@/types/data.types";
 import { ICONS, IMAGES } from "./assets";
+import { LINKS, PROJECTS_LINKS } from "./links";
+import { TECH_NAMES } from "./names";
 
 export const experiencesData: ExperienceDataType[] = [
   {
@@ -159,6 +165,67 @@ export const skillsData: SkillsDataType[] = [
         level: "techLevels.basic",
         hasStar: false,
         icon: ICONS.skills.vercel,
+      },
+    ],
+  },
+];
+
+export const projectsData: ProjectsDataType[] = [
+  {
+    id: 1,
+    title: "data.mathCalc.title",
+    description: "data.mathCalc.description",
+    thumbnail: IMAGES.projects.thumbnails.thumbCalc,
+    image: IMAGES.projects.normal.calc,
+    demoLink: PROJECTS_LINKS.mathCalc.demo,
+    repoLink: PROJECTS_LINKS.mathCalc.repo,
+    techs: [
+      {
+        id: 1,
+        techName: TECH_NAMES.html,
+      },
+      {
+        id: 2,
+        techName: TECH_NAMES.css,
+      },
+      {
+        id: 3,
+        techName: TECH_NAMES.javascript,
+      },
+      {
+        id: 4,
+        techName: TECH_NAMES.reactjs,
+      },
+      {
+        id: 5,
+        techName: TECH_NAMES.vercel,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "data.animeManga.title",
+    description: "data.animeManga.description",
+    thumbnail: IMAGES.projects.thumbnails.thumbKitsu,
+    image: IMAGES.projects.normal.kitsu,
+    demoLink: PROJECTS_LINKS.animeManga.demo,
+    repoLink: PROJECTS_LINKS.animeManga.repo,
+    techs: [
+      {
+        id: 1,
+        techName: TECH_NAMES.reactjs,
+      },
+      {
+        id: 2,
+        techName: TECH_NAMES.javascript,
+      },
+      {
+        id: 3,
+        techName: TECH_NAMES.css,
+      },
+      {
+        id: 4,
+        techName: TECH_NAMES.vercel,
       },
     ],
   },

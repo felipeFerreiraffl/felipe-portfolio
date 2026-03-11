@@ -4,6 +4,7 @@ import AboutMe from "@/components/sections/AboutMe";
 import Contact from "@/components/sections/Contact";
 import Experiences from "@/components/sections/Experiences";
 import Hero from "@/components/sections/Hero";
+import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 
 export default function LandingPage() {
@@ -15,7 +16,7 @@ export default function LandingPage() {
         <AboutMe />
         <Experiences />
         <Skills />
-
+        <Projects />
         <Contact />
       </div>
     </>
