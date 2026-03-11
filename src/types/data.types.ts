@@ -28,3 +28,18 @@ export type SkillsDataType = {
   illustration: StaticImageData | string;
   techs: SkillsTechs[];
 };
+
+export type ProjectsTechs = {
+  id: number | null;
+  techName: string;
+};
+
+export type ProjectsDataType = {
+  id: number | null;
+  title: string;
+  description: string;
+  thumbnail: StaticImageData | string;
+  image: StaticImageData | string;
+  link: string;
+  techs: ProjectsTechs[];
+};

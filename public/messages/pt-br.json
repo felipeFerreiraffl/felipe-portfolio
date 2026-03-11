@@ -98,6 +98,8 @@
         "description": "Animes & Mangás é uma aplicação web desenvolvida em React que consome a Kitsu API para entregar ao usuário uma experiência completa de descoberta de animes e mangás, resolvendo o problema de fragmentação de informações em múltiplas fontes. A aplicação conta com páginas dedicadas para explorar os títulos mais populares e melhor avaliados de todos os tempos, os lançamentos e destaques da temporada atual, além de navegação por 8 gêneros distintos (Ação, Comédia, Drama, Esportes, Horror, Mistério, Romance e Sci-fi) — tudo exibido em carrosséis interativos e cards responsivos. Cada título possui uma página de detalhes com informações como título canônico, título em inglês, status, data de criação e número de episódios ou capítulos. A arquitetura do projeto segue boas práticas com separação entre camada de serviços (integração com a API), componentes reutilizáveis e páginas independentes, além de recursos de UX como tela de carregamento, botão de voltar ao topo e navegação fluida via React Router."
       }
     },
+    "description": "Descrição",
+    "techs": "Tecnologias",
     "viewProject": "Ver projeto"
   },
   "Contact": {
