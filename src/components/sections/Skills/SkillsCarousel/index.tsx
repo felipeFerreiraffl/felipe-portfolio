@@ -28,6 +28,8 @@ export default function SkillsCarousel() {
       setCanNext(emblaApi.canScrollNext());
     };
 
+    updateBtn();
+
     emblaApi.on("select", updateBtn);
     emblaApi.on("reInit", updateBtn);
 
