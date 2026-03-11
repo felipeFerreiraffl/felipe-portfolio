@@ -100,7 +100,8 @@
     },
     "description": "Descrição",
     "techs": "Tecnologias",
-    "viewProject": "Ver projeto"
+    "linkToDemo": "Demo",
+    "linkToRepo": "Repositório"
   },
   "Contact": {
     "title": "Contato",

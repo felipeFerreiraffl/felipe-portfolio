@@ -177,7 +177,8 @@ export const projectsData: ProjectsDataType[] = [
     description: "data.mathCalc.description",
     thumbnail: IMAGES.projects.thumbnails.thumbCalc,
     image: IMAGES.projects.normal.calc,
-    link: PROJECTS_LINKS.mathCalc,
+    demoLink: PROJECTS_LINKS.mathCalc.demo,
+    repoLink: PROJECTS_LINKS.mathCalc.repo,
     techs: [
       {
         id: 1,
@@ -207,7 +208,8 @@ export const projectsData: ProjectsDataType[] = [
     description: "data.animeManga.description",
     thumbnail: IMAGES.projects.thumbnails.thumbKitsu,
     image: IMAGES.projects.normal.kitsu,
-    link: PROJECTS_LINKS.animeManga,
+    demoLink: PROJECTS_LINKS.animeManga.demo,
+    repoLink: PROJECTS_LINKS.animeManga.repo,
     techs: [
       {
         id: 1,

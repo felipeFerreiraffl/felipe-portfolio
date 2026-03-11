@@ -40,6 +40,7 @@ export type ProjectsDataType = {
   description: string;
   thumbnail: StaticImageData | string;
   image: StaticImageData | string;
-  link: string;
+  demoLink: string;
+  repoLink: string;
   techs: ProjectsTechs[];
 };
