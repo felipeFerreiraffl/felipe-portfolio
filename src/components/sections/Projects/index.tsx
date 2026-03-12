@@ -12,7 +12,10 @@ export default function Projects() {
   const analyzeRemainder = (number: number) => number % 2 === 0;
 
   return (
-    <section ref={projects} className="flex flex-col items-center gap-10">
+    <section
+      ref={projects}
+      className="flex flex-col items-center gap-10"
+      tabIndex={0}>
       <SectionTitle
         title={t("title")}
         icon={ICONS.sections.projects}

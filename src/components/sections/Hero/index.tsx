@@ -11,7 +11,9 @@ export default function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative lg:flex-1 flex items-center lg:justify-around justify-center lg:flex-row flex-col m-auto lg:pt-0 pt-22 lg:gap-10 w-[90vw] h-dvh">
+    <section
+      className="relative lg:flex-1 flex items-center lg:justify-around justify-center lg:flex-row flex-col m-auto lg:pt-0 pt-22 lg:gap-10 w-[90vw] h-dvh"
+      tabIndex={0}>
       <div className="flex flex-col gap-20 lg:items-start items-center lg:justify-normal justify-center lg:w-1/2 w-full lg:h-131 h-106 lg:my-0 my-6 lg:pt-10 lg:pb-20 lg:border-l-2 lg:border-l-line">
         <div className="w-full flex flex-col gap-2">
           <span className="font-heading font-medium md:text-xl lg:text-left text-center lg:pl-10 text-white leading-heading">
