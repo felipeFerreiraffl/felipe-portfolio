@@ -2,12 +2,12 @@
 
 import { useSectionRefs } from "@/context/sectionRefsContext";
 import { scrollToSection } from "@/utils/scrollToSection";
-import { useTranslations } from "next-intl";
-import LangSelector from "./LangSelector";
-import { useState } from "react";
 import clsx from "clsx";
-import Menu from "./Menu";
 import { AnimatePresence } from "motion/react";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+import LangSelector from "./LangSelector";
+import Menu from "./Menu";
 
 export default function Header() {
   const refs = useSectionRefs();

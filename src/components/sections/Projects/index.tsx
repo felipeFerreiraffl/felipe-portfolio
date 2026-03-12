@@ -1,10 +1,9 @@
 import SectionTitle from "@/components/ui/SectionTitle";
-import { ICONS, IMAGES } from "@/constants/assets";
+import { ICONS } from "@/constants/assets";
+import { projectsData } from "@/constants/data";
 import { useSectionRefs } from "@/context/sectionRefsContext";
 import { useTranslations } from "next-intl";
 import ProjectCard from "./ProjectCard";
-import ProjectDetails from "./ProjectDetails";
-import { projectsData } from "@/constants/data";
 
 export default function Projects() {
   const { projects } = useSectionRefs();
