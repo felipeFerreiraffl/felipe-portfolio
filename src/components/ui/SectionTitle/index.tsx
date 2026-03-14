@@ -23,6 +23,11 @@ export default function SectionTitle({
     exit: { scaleX: 0 },
   });
 
+  const textVariants = motionVariants({
+    initial: { opacity: 0 },
+    animation: { opacity: 1, transition: { ease: "easeInOut", duration: 0.5 } },
+  });
+
   return (
     <div className="w-full flex mx-auto md:items-start items-center md:flex-row flex-col md:gap-0 gap-3">
       <Icon
@@ -32,9 +37,14 @@ export default function SectionTitle({
       />
 
       <div className="w-full flex flex-col md:items-start items-center gap-1">
-        <span className="font-body font-normal leading-body md:text-sm text-white md:pl-5">
+        <m.span
+          variants={textVariants}
+          initial="start"
+          whileInView="middle"
+          viewport={{ amount: 0.8 }}
+          className="font-body font-normal leading-body md:text-sm text-white md:pl-5">
           {t("sectionChapter", { number: chapterNumber })}
-        </span>
+        </m.span>
         <m.hr
           variants={lineVariants}
           initial="start"
@@ -43,9 +53,14 @@ export default function SectionTitle({
           viewport={{ amount: 0.8 }}
           className="border-none h-[1.5px] bg-main w-full origin-left"
         />
-        <h2 className="font-heading font-bold leading-heading lg:text-5xl md:text-heading-h2 text-heading-h3 text-white uppercase md:pl-5">
+        <m.h2
+          variants={textVariants}
+          initial="start"
+          whileInView="middle"
+          viewport={{ amount: 0.8 }}
+          className="font-heading font-bold leading-heading lg:text-5xl md:text-heading-h2 text-heading-h3 text-white uppercase md:pl-5">
           {title}
-        </h2>
+        </m.h2>
       </div>
     </div>
   );
