@@ -8,6 +8,7 @@ import { ProjectsTechs } from "@/types/data.types";
 import { AnimatePresence } from "motion/react";
 import * as m from "motion/react-m";
 import type { Variants } from "motion/react";
+import { motionVariants } from "@/utils/motionVariants";
 
 type ProjectCard = {
   title: string;
@@ -38,11 +39,11 @@ export default function ProjectCard({
   const textAlignSlice =
     slice === "right" ? "justify-start text-left" : "justify-end text-right";
 
-  const backdropVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { ease: "easeInOut", duration: 0.3 } },
+  const backdropVariants = motionVariants({
+    initial: { opacity: 0 },
+    animation: { opacity: 1, transition: { ease: "easeInOut", duration: 0.3 } },
     exit: { opacity: 0 },
-  };
+  });
 
   return (
     <>

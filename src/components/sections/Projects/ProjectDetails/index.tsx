@@ -3,6 +3,7 @@ import Icon from "@/components/ui/Icon";
 import { ICONS } from "@/constants/assets";
 import { ProjectsTechs } from "@/types/data.types";
 import { imageUrl } from "@/utils/imageUrl";
+import { motionVariants } from "@/utils/motionVariants";
 import { type Variants } from "motion/react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
@@ -31,24 +32,22 @@ export default function ProjectDetails({
   const tPro = useTranslations("Projects");
   const tCom = useTranslations("Common");
 
-  const modalVariants: Variants = {
-    closed: { scale: 0.9, opacity: 0 },
-    opened: {
+  const modalVariants = motionVariants({
+    initial: { scale: 0.9, opacity: 0 },
+    animation: {
       scale: 1,
       opacity: 1,
       transition: { ease: "easeInOut", duration: 0.3 },
     },
-    exit: {
-      opacity: 0,
-    },
-  };
+    exit: { opacity: 0 },
+  });
 
   return (
     <m.div
       variants={modalVariants}
-      initial="closed"
-      animate="opened"
-      exit="exit"
+      initial="start"
+      animate="middle"
+      exit="end"
       className="relative md:w-[80dvw] w-[90dvw] max-h-[90dvh] flex lg:flex-row flex-col md:items-start items-center gap-10 bg-bg border-[1.5px] border-line rounded-lg lg:px-10 lg:py-20 md:p-10 p-5 origin-center">
       <button
         onClick={() => setOpen?.(false)}
