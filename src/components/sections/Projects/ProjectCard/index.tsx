@@ -66,9 +66,9 @@ export default function ProjectCard({
         {open && (
           <m.div
             variants={backdropVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+            initial="start"
+            animate="middle"
+            exit="end"
             className="fixed inset-0 flex items-center justify-center bg-black/80 backdrop-blur-sm z-120"
             onClick={() => setOpen(false)}>
             <div onClick={(e) => e.stopPropagation()}>
