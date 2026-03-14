@@ -11,7 +11,8 @@ export default function Experiences() {
   return (
     <section
       ref={experiences}
-      className="w-full flex flex-col lg:items-end items-center gap-10">
+      className="w-full flex flex-col lg:items-end items-center gap-10"
+      tabIndex={0}>
       <SectionTitle
         title={tExp("title")}
         chapterNumber={2}

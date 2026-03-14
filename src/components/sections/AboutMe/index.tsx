@@ -11,7 +11,8 @@ export default function AboutMe() {
   return (
     <section
       className="w-full flex flex-col items-center gap-10"
-      ref={aboutMe}>
+      ref={aboutMe}
+      tabIndex={0}>
       <SectionTitle
         title={t("title")}
         icon={ICONS.sections.about}

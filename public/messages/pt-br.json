@@ -111,6 +111,9 @@
       "mail": "Copiar/enviar e-mail"
     }
   },
+  "Footer": {
+    "message": "Fim da página. Mas a história continua..."
+  },
   "Common": {
     "sectionChapter": "Capítulo {number}",
     "carouselButton": {

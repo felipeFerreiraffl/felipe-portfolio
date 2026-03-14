@@ -25,7 +25,7 @@
         "description": "Developer with full-stack tools and modern projects experience"
       },
       "goals": {
-        "title": "Objetivos",
+        "title": "Goals",
         "description": "Become a senior programmer and, if possible, working full-stack or with game development"
       },
       "hobbies": {
@@ -110,6 +110,9 @@
       "linkedin": "Go to LinkedIn",
       "mail": "Copy/send e-mail"
     }
+  },
+  "Footer": {
+    "message": "End of the page. But the story continues..."
   },
   "Common": {
     "sectionChapter": "Chapter {number}",

@@ -1,11 +1,12 @@
 "use client";
 
 import { useSectionRefs } from "@/context/sectionRefsContext";
+import { motionVariants } from "@/utils/motionVariants";
 import { scrollToSection } from "@/utils/scrollToSection";
-import { useTranslations } from "next-intl";
-import { Dispatch, RefObject, SetStateAction } from "react";
 import type { Variants } from "motion/react";
 import * as m from "motion/react-m";
+import { useTranslations } from "next-intl";
+import { Dispatch, RefObject, SetStateAction } from "react";
 
 type MenuProps = {
   isOpen: boolean;
@@ -33,9 +34,9 @@ export default function Menu({ isOpen, setIsOpen }: MenuProps) {
     setIsOpen(false);
   };
 
-  const navVariants: Variants = {
-    closed: { scale: 0, opacity: 0 },
-    opened: {
+  const navVariants = motionVariants({
+    initial: { scale: 0, opacity: 0 },
+    animation: {
       scale: 1,
       opacity: 1,
       transition: { ease: "easeInOut", duration: 0.3 },
@@ -44,14 +45,14 @@ export default function Menu({ isOpen, setIsOpen }: MenuProps) {
       scale: 0,
       opacity: 0,
     },
-  };
+  });
 
   return (
     <m.nav
       variants={navVariants}
-      initial="closed"
-      animate="opened"
-      exit="exit"
+      initial="start"
+      animate="middle"
+      exit="end"
       className="absolute top-0 md:left-10 left-5 md:py-25 md:px-20 py-15 px-10 bg-bg border-[1.5px] border-main rounded-lg shadow-normal origin-top-left z-110">
       <ul className="flex flex-col items-start gap-5">
         {navLinks.map((anchor, idx) => (

@@ -1,10 +1,9 @@
 import SectionTitle from "@/components/ui/SectionTitle";
-import { ICONS, IMAGES } from "@/constants/assets";
+import { ICONS } from "@/constants/assets";
+import { projectsData } from "@/constants/data";
 import { useSectionRefs } from "@/context/sectionRefsContext";
 import { useTranslations } from "next-intl";
 import ProjectCard from "./ProjectCard";
-import ProjectDetails from "./ProjectDetails";
-import { projectsData } from "@/constants/data";
 
 export default function Projects() {
   const { projects } = useSectionRefs();
@@ -13,7 +12,10 @@ export default function Projects() {
   const analyzeRemainder = (number: number) => number % 2 === 0;
 
   return (
-    <section ref={projects} className="flex flex-col items-center gap-10">
+    <section
+      ref={projects}
+      className="flex flex-col items-center gap-10"
+      tabIndex={0}>
       <SectionTitle
         title={t("title")}
         icon={ICONS.sections.projects}

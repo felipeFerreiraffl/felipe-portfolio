@@ -24,7 +24,7 @@ export default function SkillCard({
   };
 
   return (
-    <div className="lg:max-w-221 md:max-w-[70dvw] max-w-[78dvw] w-full flex flex-col items-center">
+    <div className="lg:max-w-[60dvw] md:max-w-[70dvw] max-w-[78dvw] w-full flex flex-col items-center">
       <h3 className="font-heading font-medium leading-heading md:text-2xl text-xl text-white bg-bg border-[1.5px] border-main rounded-sm p-3 shadow-normal -mb-6 z-10">
         {resolveTitle(title)}
       </h3>
@@ -42,7 +42,7 @@ export default function SkillCard({
           ))}
         </div>
 
-        <div className="relative aspect-portrait max-w-80 w-full h-full opacity-40 clip-path-illustration lg:block hidden">
+        <div className="relative aspect-portrait max-w-80 size-full opacity-40 clip-path-illustration lg:block hidden">
           <div className="absolute top-0 left-0 size-full bg-main/40"></div>
           <div
             className="size-full bg-(image:--bg-img) bg-center bg-cover bg-no-repeat opacity-60"

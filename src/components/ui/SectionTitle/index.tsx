@@ -1,6 +1,8 @@
 import { IconSVGElement } from "@/types/elements.types";
 import { useTranslations } from "next-intl";
 import Icon from "../Icon";
+import * as m from "motion/react-m";
+import { motionVariants } from "@/utils/motionVariants";
 
 type SectionTitleProps = {
   title: string;
@@ -15,6 +17,17 @@ export default function SectionTitle({
 }: SectionTitleProps) {
   const t = useTranslations("Common");
 
+  const lineVariants = motionVariants({
+    initial: { scaleX: 0 },
+    animation: { scaleX: 1, transition: { ease: "easeInOut", duration: 0.8 } },
+    exit: { scaleX: 0 },
+  });
+
+  const textVariants = motionVariants({
+    initial: { opacity: 0 },
+    animation: { opacity: 1, transition: { ease: "easeInOut", duration: 0.5 } },
+  });
+
   return (
     <div className="w-full flex mx-auto md:items-start items-center md:flex-row flex-col md:gap-0 gap-3">
       <Icon
@@ -24,13 +37,30 @@ export default function SectionTitle({
       />
 
       <div className="w-full flex flex-col md:items-start items-center gap-1">
-        <span className="font-body font-normal leading-body md:text-sm text-white md:pl-5">
+        <m.span
+          variants={textVariants}
+          initial="start"
+          whileInView="middle"
+          viewport={{ amount: 0.8 }}
+          className="font-body font-normal leading-body md:text-sm text-white md:pl-5">
           {t("sectionChapter", { number: chapterNumber })}
-        </span>
-        <hr className="border-none h-[1.5px] bg-main w-full" />
-        <h2 className="font-heading font-bold leading-heading lg:text-5xl md:text-heading-h2 text-heading-h3 text-white uppercase md:pl-5">
+        </m.span>
+        <m.hr
+          variants={lineVariants}
+          initial="start"
+          whileInView="middle"
+          exit="end"
+          viewport={{ amount: 0.8 }}
+          className="border-none h-[1.5px] bg-main w-full origin-left"
+        />
+        <m.h2
+          variants={textVariants}
+          initial="start"
+          whileInView="middle"
+          viewport={{ amount: 0.8 }}
+          className="font-heading font-bold leading-heading lg:text-5xl md:text-heading-h2 text-heading-h3 text-white uppercase md:pl-5">
           {title}
-        </h2>
+        </m.h2>
       </div>
     </div>
   );

@@ -31,7 +31,10 @@ export default function Contact() {
   ];
 
   return (
-    <section ref={contact} className="flex flex-col items-center gap-10">
+    <section
+      ref={contact}
+      className="flex flex-col items-center gap-10"
+      tabIndex={0}>
       <SectionTitle
         title={t("title")}
         icon={ICONS.sections.contacts}
