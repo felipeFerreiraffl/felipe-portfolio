@@ -80,6 +80,7 @@ export default function ProjectCard({
                 repoLink={repoLink}
                 setOpen={setOpen}
                 techs={techs}
+                ariaHidden={open ? false : true}
               />
             </div>
           </m.div>
