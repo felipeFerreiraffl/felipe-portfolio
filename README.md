@@ -3,7 +3,7 @@
 ## Index
 
 - [About](#about)
-- [Features](#)
+- [Features](#features)
 - [Stack](#stack)
 - [Getting started](#getting-started)
 - [Preview](#preview)
