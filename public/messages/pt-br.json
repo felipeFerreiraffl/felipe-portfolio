@@ -1,0 +1,125 @@
+{
+  "Header": {
+    "navLabels": {
+      "aboutMe": "Sobre mim",
+      "experiences": "Experiências",
+      "skills": "Habilidades",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "Hero": {
+    "volumeTitle": "Portfólio profissional",
+    "role": "Desenvolvedor de Software Jr.",
+    "curriculumButton": "Ver currículo",
+    "profileAlt": "Eu - {name}",
+    "scrollDown": "Conteúdo abaixo"
+  },
+  "AboutMe": {
+    "title": "Sobre mim",
+    "introCards": {
+      "presentation": {
+        "title": "Apresentação",
+        "description": "Desenvolvedor com experiência em tecnologias full-stack e projetos modernos"
+      },
+      "goals": {
+        "title": "Objetivos",
+        "description": "Me tornar um programador sênior e, possivelmente, trabalhar com full-stack ou produção de games"
+      },
+      "hobbies": {
+        "title": "Hobbies",
+        "description": "Gosto de jogar videogames, assistir animes, ler mangás, assistir futebol  e desenhar"
+      }
+    }
+  },
+  "Experiences": {
+    "title": "Experiências",
+    "cardTitles": {
+      "description": "Descrição",
+      "skillsEarned": "Habilidades adquiridas",
+      "skillsUsed": "Habilidades utilizadas"
+    },
+    "cards": {
+      "swissSenai": {
+        "title": "SENAI Suiço-Brasileiro",
+        "description": "Curso técnico de Desenvolvimento de Sistemas, com aprendizagem sobre o universo de tecnologia de desenvolvimento, como front-end, backend, redes, etc.",
+        "optionalTechs": {
+          "network": "Redes",
+          "agileMethods": "Metodologias ágeis"
+        }
+      },
+      "mercedes": {
+        "title": "SENAI Mercedes-Benz",
+        "description": "Curso de aprendizagem industrial com atividades de produção de peças e montagem de conjuntos de veículos pesados.",
+        "optionalTechs": {
+          "teamwork": "Trabalho em equipe",
+          "proactivity": "Proatividade",
+          "details": "Atenção aos detalhes"
+        }
+      },
+      "mShimizu": {
+        "title": "M. Shimizu - Desenvolvedor de Soft. Jr.",
+        "description": "Desenvolvimento de sofwares internos e externos da empresa M. Shimizu"
+      }
+    },
+    "currentWork": "atual",
+    "dateMonths": {
+      "february": "fev. {year}",
+      "april": "abr. {year}",
+      "may": "maio {year}",
+      "august": "ago. {year}",
+      "octuber": "out. {year}",
+      "december": "dez. {year}"
+    }
+  },
+  "Skills": {
+    "title": "Habilidades",
+    "techLevels": {
+      "basic": "Básico",
+      "intermediate": "Intermediário",
+      "advanced": "Avançado"
+    },
+    "techTitle": {
+      "tools": "Ferramentas"
+    },
+    "hasStar": "Favorito"
+  },
+  "Projects": {
+    "title": "Projetos",
+    "data": {
+      "mathCalc": {
+        "title": "Cálculos matemáticos",
+        "description": "Cálculos Matemáticos é uma aplicação web desenvolvida em React com roteamento via React Router, que centraliza em um único lugar diferentes tipos de calculadoras para resolver problemas do cotidiano e acadêmicos. O projeto conta com módulos independentes para cálculo de IMC, juros simples e compostos, operações matemáticas e fórmulas de física, organizados em páginas dedicadas e navegáveis. A arquitetura foi estruturada com separação clara de responsabilidades — componentes reutilizáveis, scripts de lógica isolados e páginas independentes —, o que demonstra boas práticas de organização de código em projetos front-end. Toda a aplicação é servida como SPA e hospedada na Vercel, garantindo deploy contínuo e acesso rápido. O projeto resolve o problema de ter que recorrer a múltiplas ferramentas diferentes para cálculos distintos, reunindo tudo em uma interface limpa, intuitiva e de fácil navegação."
+      },
+      "animeManga": {
+        "title": "Animes & Mangás",
+        "description": "Animes & Mangás é uma aplicação web desenvolvida em React que consome a Kitsu API para entregar ao usuário uma experiência completa de descoberta de animes e mangás, resolvendo o problema de fragmentação de informações em múltiplas fontes. A aplicação conta com páginas dedicadas para explorar os títulos mais populares e melhor avaliados de todos os tempos, os lançamentos e destaques da temporada atual, além de navegação por 8 gêneros distintos (Ação, Comédia, Drama, Esportes, Horror, Mistério, Romance e Sci-fi) — tudo exibido em carrosséis interativos e cards responsivos. Cada título possui uma página de detalhes com informações como título canônico, título em inglês, status, data de criação e número de episódios ou capítulos. A arquitetura do projeto segue boas práticas com separação entre camada de serviços (integração com a API), componentes reutilizáveis e páginas independentes, além de recursos de UX como tela de carregamento, botão de voltar ao topo e navegação fluida via React Router."
+      }
+    },
+    "description": "Descrição",
+    "techs": "Tecnologias",
+    "linkToDemo": "Demo",
+    "linkToRepo": "Repositório"
+  },
+  "Contact": {
+    "title": "Contato",
+    "linksTitle": {
+      "github": "Navegar para GitHub",
+      "linkedin": "Navegar para LinkedIn",
+      "mail": "Copiar/enviar e-mail"
+    }
+  },
+  "Footer": {
+    "message": "Fim da página. Mas a história continua..."
+  },
+  "Common": {
+    "sectionChapter": "Capítulo {number}",
+    "carouselButton": {
+      "prev": "Anterior",
+      "next": "Próximo"
+    },
+    "close": "Fechar"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "Header": {
+    "navLabels": {
+      "aboutMe": "About me",
+      "experiences": "Experiences",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "Hero": {
+    "volumeTitle": "Professional portfolio",
+    "role": "Junior Software Developer",
+    "curriculumButton": "See curriculum",
+    "profileAlt": "Me - {name}",
+    "scrollDown": "Content below"
+  },
+  "AboutMe": {
+    "title": "About me",
+    "introCards": {
+      "presentation": {
+        "title": "Presentation",
+        "description": "Developer with full-stack tools and modern projects experience"
+      },
+      "goals": {
+        "title": "Goals",
+        "description": "Become a senior programmer and, if possible, working full-stack or with game development"
+      },
+      "hobbies": {
+        "title": "Hobbies",
+        "description": "I like playing videogames, watch animes, read mangas, watch football and drawing"
+      }
+    }
+  },
+  "Experiences": {
+    "title": "Experiences",
+    "cardTitles": {
+      "description": "Description",
+      "skillsEarned": "Earned skills",
+      "skillsUsed": "Used skills"
+    },
+    "cards": {
+      "swissSenai": {
+        "title": "SENAI Suiço-Brasileiro",
+        "description": "Technical course in Systems Development, covering the technology development universe, including front-end, back-end, networking, etc.",
+        "optionalTechs": {
+          "network": "Networking",
+          "agileMethods": "Agile methodologies"
+        }
+      },
+      "mercedes": {
+        "title": "SENAI Mercedes-Benz",
+        "description": "Industrial apprenticeship course with activities involving parts production and assembly of heavy vehicle components.",
+        "optionalTechs": {
+          "teamwork": "Teamwork",
+          "proactivity": "Proactivity",
+          "details": "Attention to detail"
+        }
+      },
+      "mShimizu": {
+        "title": "M. Shimizu - Jr. Software Developer",
+        "description": "Development of internal and external software for the company M. Shimizu."
+      }
+    },
+    "currentWork": "current",
+    "dateMonths": {
+      "february": "feb. {year}",
+      "april": "apr. {year}",
+      "may": "may {year}",
+      "august": "aug. {year}",
+      "octuber": "oct. {year}",
+      "december": "dec. {year}"
+    }
+  },
+  "Skills": {
+    "title": "Skills",
+    "techLevels": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "techTitle": {
+      "tools": "Tools"
+    },
+    "hasStar": "Favorite"
+  },
+  "Projects": {
+    "title": "Projects",
+    "data": {
+      "mathCalc": {
+        "title": "Cálculos matemáticos",
+        "description": "Cálculos Matemáticos is a React-based web application with client-side routing that brings together multiple types of calculators in a single, unified interface — solving the everyday problem of needing to switch between different tools for different calculations. The app features dedicated modules for BMI calculation, simple and compound interest, mathematical operations, and physics formulas, each organized as independent, navigable pages. The codebase follows a clear separation of concerns, with reusable components, isolated logic scripts, and self-contained pages, reflecting solid front-end architecture practices. Deployed as a SPA on Vercel with continuous delivery, the project demonstrates proficiency in React, component-driven development, and application structuring."
+      },
+      "animeManga": {
+        "title": "Animes & Mangás",
+        "description": "Animes & Mangás is a React web application that integrates with the Kitsu API to provide a unified platform for discovering anime and manga titles, solving the problem of scattered information across multiple sources. The app features dedicated sections for all-time most popular and highest-rated titles, currently airing seasonal content (sorted by rating and recency), and genre-based browsing across 8 categories — all presented through interactive carousels and responsive cards. Each title links to a detailed page displaying canonical title, English title, status, creation date, episode or chapter count, and more. The project follows a clean architectural pattern with a dedicated service layer for API communication, reusable UI components (Slider, ContentCard, GenderCard, LoadingScreen, ScrollToTop), and independent page modules, demonstrating solid command of React, external API consumption, component-driven development, and thoughtful UX design."
+      }
+    },
+    "description": "Description",
+    "techs": "Technologies",
+    "linkToDemo": "Demo",
+    "linkToRepo": "Repository"
+  },
+  "Contact": {
+    "title": "Contact",
+    "linksTitle": {
+      "github": "Go to GitHub",
+      "linkedin": "Go to LinkedIn",
+      "mail": "Copy/send e-mail"
+    }
+  },
+  "Footer": {
+    "message": "End of the page. But the story continues..."
+  },
+  "Common": {
+    "sectionChapter": "Chapter {number}",
+    "carouselButton": {
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "close": "Close"
+  }
+}

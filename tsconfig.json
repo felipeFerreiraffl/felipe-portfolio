@@ -20,23 +20,19 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@constants/*": ["./src/constants/*"],
-      "@components/*": ["./src/ui/components/*"],
       "@i18n/*": ["./src/lib/i18n/*"],
-      "@images/*": ["./public/assets/imgs/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@types*": ["./src/types/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@images/*": ["./public/assets/imgs/*"]
     }
   },
   "include": [
+    "src/types/svgr.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "svgr.config.js"
   ],
   "exclude": ["node_modules"]
 }
