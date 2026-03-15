@@ -18,6 +18,7 @@ type ProjectDetailsProps = {
   repoLink: string;
   techs?: ProjectsTechs[];
   setOpen?: Dispatch<SetStateAction<boolean>>;
+  ariaHidden?: boolean;
 };
 
 export default function ProjectDetails({
@@ -28,6 +29,7 @@ export default function ProjectDetails({
   repoLink,
   techs,
   setOpen,
+  ariaHidden,
 }: ProjectDetailsProps) {
   const tPro = useTranslations("Projects");
   const tCom = useTranslations("Common");
@@ -48,7 +50,8 @@ export default function ProjectDetails({
       initial="start"
       animate="middle"
       exit="end"
-      className="relative md:w-[80dvw] w-[90dvw] max-h-[90dvh] flex lg:flex-row flex-col md:items-start items-center gap-10 bg-bg border-[1.5px] border-line rounded-lg lg:px-10 lg:py-20 md:p-10 p-5 origin-center">
+      className="relative md:w-[80dvw] w-[90dvw] max-h-[90dvh] flex lg:flex-row flex-col md:items-start items-center gap-10 bg-bg border-[1.5px] border-line rounded-lg lg:px-10 lg:py-20 md:p-10 p-5 origin-center"
+      aria-hidden={ariaHidden}>
       <button
         onClick={() => setOpen?.(false)}
         className="cursor-pointer absolute -top-3 -right-3 p-2 aspect-square bg-bg border border-main rounded-sm shadow-normal transition-colors duration-300 ease-in-out hover:bg-main">
