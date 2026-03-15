@@ -53,7 +53,8 @@ export default function Menu({ isOpen, setIsOpen }: MenuProps) {
       initial="start"
       animate="middle"
       exit="end"
-      className="absolute top-0 md:left-10 left-5 md:py-25 md:px-20 py-15 px-10 bg-bg border-[1.5px] border-main rounded-lg shadow-normal origin-top-left z-110">
+      className="absolute top-0 md:left-10 left-5 md:py-25 md:px-20 py-15 px-10 bg-bg border-[1.5px] border-main rounded-lg shadow-normal origin-top-left z-110"
+      aria-hidden={isOpen ? false : true}>
       <ul className="flex flex-col items-start gap-5">
         {navLinks.map((anchor, idx) => (
           <li key={idx}>
