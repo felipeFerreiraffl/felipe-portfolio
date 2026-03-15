@@ -9,6 +9,15 @@
 - [Preview](#preview)
 - [Author](#author)
 
+## About
+
+Professional portfolio made by **Felipe Ferreira Lima** — a landing page that showcase my skills, projects and experiences thoughout my journey as a front-end developer, prioritizing performance, accessibility and best practices, such as internationalization to foreign language (PT-BR/EN).
+
+This project was designed prioritizing performance, accessibility and internationalization (PT-BR/EN). The visual concepts relies on a professional looking portfolio and on manga panels layout: rectangular elements, diagonal cuts and minimal rounded corners.
+
+Check out the Figma design for reference:
+[![Figma](https://img.shields.io/badge/Figma-f24e1e?style=for-the-badge&logo=figma&logoColor=ffffff)](https://www.figma.com/design/tkG2yw8HLbBKX20WfltUwi/Portfolio-Design?m=auto&t=eGOqL4fxuByInN7i-6)
+
 ## Features
 - Build with Next.js 16 and React 19
 - Internationalization (PT-BR/EN) via i18next
@@ -18,15 +27,6 @@
 - Accessibility-first approach
 - Performance check
 - Deployed on Vercel
-
-## About
-
-Professional portfolio made by **Felipe Ferreira Lima** — a landing page that showcase my skills, projects and experiences thoughout my journey as a front-end developer, prioritizing performance, accessibility and best practices, such as internationalization to foreign language (PT-BR/EN).
-
-This project was designed prioritizing performance, accessibility and internationalization (PT-BR/EN). The visual concepts relies on a professional looking portfolio and on manga panels layout: rectangular elements, diagonal cuts and minimal rounded corners.
-
-Check out the Figma design for reference:
-[![Figma](https://img.shields.io/badge/Figma-f24e1e?style=for-the-badge&logo=figma&logoColor=ffffff)](https://www.figma.com/design/tkG2yw8HLbBKX20WfltUwi/Portfolio-Design?m=auto&t=eGOqL4fxuByInN7i-6)
 
 ## Stack
 
